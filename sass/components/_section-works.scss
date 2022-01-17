@@ -1,6 +1,7 @@
 .works {
-    display: flex;
-    justify-content: space-between;
+    @include FlexCenter(space-between);
+    /*display: flex;
+    justify-content: space-between;*/
 }
 
 .works__item {
@@ -8,14 +9,14 @@
 }
 
 .works__label {
+    @include FlexCenter(center);
+
     position: absolute;
     bottom: 0;
     width: 370px;
     height: 70px;
     background: rgba(47, 48, 58, 0.8);
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    
 }
 
 .works__description {

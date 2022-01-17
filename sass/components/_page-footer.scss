@@ -79,9 +79,8 @@
 }
 
 .subscribe-button {
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
+    @include FlexCenter(center);
+
     width: 200px;
     height: 50px;
     cursor: pointer;
@@ -100,11 +99,11 @@
     transition-property: background-color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-.subscribe-button:hover,
-.subscribe-button:focus {
-    background-color: #188CE8;
+    &:hover,
+    &:focus {
+        background-color: #188CE8;
+    }
 }
 
 .subscribe-icon {

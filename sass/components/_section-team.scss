@@ -3,9 +3,10 @@
 }
 
 .team {
-    display: flex;
+    @include FlexCenter(space-between);
+    /*display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: center;*/
 }
 
 .team__card {
