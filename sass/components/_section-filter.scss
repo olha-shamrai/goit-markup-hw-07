@@ -15,7 +15,9 @@
     border-radius: 4px;
     padding: 6px 22px;
 
-    @include Transformation(color, background-color, box-shadow);
+    @include Transformation(color);
+    @include Transformation(background-color);
+    @include Transformation(box-shadow);
 
     &:hover,
     &:focus {

@@ -1,6 +1,6 @@
 .header {
     border-bottom: 1px solid #ECECEC;
-    padding: 32px 0;
+    padding: 24px 0;
 }
 
 .logo {
@@ -39,9 +39,7 @@
     letter-spacing: 0.02em;
     display: inline-block;
 
-    transition-property: color;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    @include Transformation(color);
 
     &:hover,
     &:focus {
@@ -60,7 +58,7 @@
         border-radius: 2px;
         background-color: var(--accent-color);
         position: relative;
-        top: 33px;
+        top: 25px;
         bottom: auto;
     }
 }
@@ -81,9 +79,8 @@
     display: inline-flex;
     align-items: center;
 
-    transition-property: color;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    @include Transformation(color);
+    @include Transformation(fill);
 
     &:hover,
     &:focus {
